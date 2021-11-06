@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Speedrunning Timer"
+run/main_scene="res://scene1.tscn"
+config/icon="res://iconlegit.png"
+
+[display]
+
+window/size/width=200
+window/size/height=75
+window/size/resizable=false
+window/size/always_on_top=true
+
+[gdnative]
+
+singletons=[ "res://pythonscript.gdnlib" ]
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_clear_color=Color( 0, 0, 0, 1 )
+environment/default_environment="res://default_env.tres"
