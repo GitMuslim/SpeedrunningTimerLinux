@@ -4,6 +4,6 @@ hotkeys:
 
 F9 - start
 
-ctrl - pause
+right ctrl - pause
 
 insert - reset
