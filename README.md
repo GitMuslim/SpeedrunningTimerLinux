@@ -1,6 +1,7 @@
 # SpeedrunningTimerLinux
 
 hotkeys:
+
 F9 - start
 
 ctrl - pause
