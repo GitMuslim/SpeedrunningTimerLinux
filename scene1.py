@@ -7,9 +7,8 @@ sus = 0
 def on_press(key):
 	global sus
 	try:
-		print('alphanumeric key {0} pressed'.format(key.char))
+		pass
 	except AttributeError:
-		print('special key {0} pressed'.format(key))
 		if str(key) == "Key.ctrl_r":
 			sus = 0
 		elif str(key) == "Key.f9":
@@ -36,7 +35,6 @@ class scene1(Node2D):
 		pass
 	
 	def _process(self, _delta):
-		print(sus)
 		if sus == 0:
 			self.get_node("Counter/stop_play").text = "0";
 		elif sus == 1:

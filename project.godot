@@ -19,6 +19,7 @@ config/icon="res://iconlegit.png"
 window/size/width=200
 window/size/height=75
 window/size/resizable=false
+window/size/borderless=true
 window/size/always_on_top=true
 
 [gdnative]

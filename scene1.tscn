@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scene1.py" type="Script" id=1]
+[ext_resource path="res://Control.gd" type="Script" id=2]
 [ext_resource path="res://Counter.gd" type="Script" id=3]
 [ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=4]
 
@@ -102,3 +103,13 @@ custom_styles/panel = SubResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Move" type="Control" parent="."]
+margin_right = 200.0
+margin_bottom = 75.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="gui_input" from="Move" to="Move" method="_on_Move_gui_input"]
