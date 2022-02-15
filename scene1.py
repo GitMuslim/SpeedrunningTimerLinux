@@ -3,12 +3,13 @@ from godot import *
 from pynput import keyboard
 
 sus = 0
-	
+
 def on_press(key):
 	global sus
 	try:
-		pass
+		print('alphanumeric key {0} pressed'.format(key.char))
 	except AttributeError:
+		print('special key {0} pressed'.format(key))
 		if str(key) == "Key.ctrl_r":
 			sus = 0
 		elif str(key) == "Key.f9":
