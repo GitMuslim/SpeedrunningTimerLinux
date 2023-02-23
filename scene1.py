@@ -22,24 +22,5 @@ listener.start()
 
 @exposed
 class scene1(Node2D):
-	
-	
-	# member variables here, example:
-	a = export(int)
-	b = export(str, default='foo')
-		
-	def _ready(self):
-		"""
-		Called every time the node is added to the scene.
-		Initialization here.
-		"""
-		pass
-	
 	def _process(self, _delta):
-		if sus == 0:
-			self.get_node("Counter/stop_play").text = "0";
-		elif sus == 1:
-			self.get_node("Counter/stop_play").text = "1";
-		elif sus == 2:
-			self.get_node("Counter/stop_play").text = "2";
-		pass
+		self.get_node("Counter/stop_play").text = str(sus)
